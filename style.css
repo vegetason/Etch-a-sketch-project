@@ -1,0 +1,17 @@
+:root{
+    --n:
+}
+*{
+    border:1px solid blue;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 640px;
+}
+.squareDiv{
+    flex: auto;
+    width: calc(var(--n)*1px);
+    height: calc(var(--n)*1px);
+}
