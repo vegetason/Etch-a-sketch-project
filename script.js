@@ -9,7 +9,7 @@ numberButtons.addEventListener('click',()=>{
     do{
         numberOfDivs=parseInt(prompt('Enter number:'));
     }
-    while(numberOfDivs>100)
+    while(numberOfDivs<0 || numberOfDivs>100)
     divArea=numberOfDivs*numberOfDivs;
     for(let i=0;i<divArea;i++){
         squareDiv=document.createElement('div');
