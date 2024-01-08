@@ -1,17 +1,42 @@
 :root{
     --n:
 }
-*{
-    border:1px solid blue;
+html{
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    background-color: orange;
+}
+body{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 #container{
     display: flex;
     flex-wrap: wrap;
     width: 640px;
     height: 640px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+}
+#container:hover,#numberOfDivs:hover{
+    box-shadow: 10px 10px 10px black;
 }
 .squareDiv{
     flex: auto;
     width: calc(var(--n)*1px);
     height: calc(var(--n)*1px);
+}
+h1{
+    text-shadow: 5px 5px 5px  black;
+
+}
+h1:hover{
+    color: blue;
 }
